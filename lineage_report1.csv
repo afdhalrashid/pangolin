@@ -1,0 +1,11 @@
+taxon,lineage,conflict,ambiguity_score,scorpio_call,scorpio_support,scorpio_conflict,scorpio_notes,version,pangolin_version,scorpio_version,constellation_version,is_designated,qc_status,qc_notes,note
+EDB001,B.1.1.26,0.0,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,pass,Ambiguous_content:0.02,Usher placements: B.1.1.26(1/1)
+EDB002,B.1.1.26,0.0,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,pass,Ambiguous_content:0.02,Usher placements: B.1.1.26(1/1)
+EDB003,Unassigned,,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,fail,Ambiguous_content:0.9,
+EDB004,Unassigned,,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,fail,Ambiguous_content:0.98,
+EDB005,B,0.0,,,,,,PANGO-v1.17,4.2,0.3.17,v0.1.10,True,pass,Ambiguous_content:0.02,Assigned from designation hash.
+EDB006,B.1.1.26,0.0,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,pass,Ambiguous_content:0.02,Usher placements: B.1.1.26(1/1)
+EDB007,B.1.1.26,0.0,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,pass,Ambiguous_content:0.02,Usher placements: B.1.1.26(1/1)
+EDB008,B.1.1.26,0.0,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,pass,Ambiguous_content:0.02,Usher placements: B.1.1.26(1/1)
+EDB009,B.1.1.26,0.0,,,,,,PUSHER-v1.17,4.2,0.3.17,v0.1.10,False,pass,Ambiguous_content:0.02,Usher placements: B.1.1.26(1/1)
+EDB010,B,0.0,,,,,,PANGO-v1.17,4.2,0.3.17,v0.1.10,True,pass,Ambiguous_content:0.02,Assigned from designation hash.

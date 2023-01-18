@@ -44,7 +44,7 @@ thisdir = os.path.abspath(os.path.dirname(__file__))
 cwd = os.getcwd()
 
 
-def main(sysargs = sys.argv[1:]):
+def main(sysargs = sys.argv[1:], ic_number = sys.argv[2]):
     parser = argparse.ArgumentParser(prog = _program,
     description='pangolin: Phylogenetic Assignment of Named Global Outbreak LINeages',
     usage='''pangolin <query> [options]''')
@@ -237,7 +237,7 @@ Finally, it is possible to skip the UShER/ pangoLEARN step by selecting "scorpio
             cached_csv = os.path.join(config[KEY_TEMPDIR],"cache_assigned.csv")
             constellation_list = get_voc_list(os.path.join(config[KEY_TEMPDIR], "get_constellations.txt"), config[KEY_ALIAS_FILE])
 
-            generate_final_report(preprocessing_csv, inference_csv, cached_csv, config[KEY_ALIAS_FILE], constellation_list, config[KEY_PANGOLIN_DATA_VERSION],config[KEY_ANALYSIS_MODE], args.skip_designation_cache, config[KEY_OUTFILE],config)
+            generate_final_report(preprocessing_csv, inference_csv, cached_csv, config[KEY_ALIAS_FILE], constellation_list, config[KEY_PANGOLIN_DATA_VERSION],config[KEY_ANALYSIS_MODE], args.skip_designation_cache, config[KEY_OUTFILE],config, ic_number)
 
             print(green(f"****\nOutput file written to: ") + config[KEY_OUTFILE])
 

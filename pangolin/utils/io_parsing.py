@@ -13,7 +13,7 @@ from pangolin.utils.config import *
 
 
 def find_query_file(cwd, tempdir, query_arg):
-    if len(query_arg) > 1:
+    if len(query_arg) > 2:
         print(cyan(f"Error: Too many query (input) fasta files supplied: {query_arg}\nPlease supply one only."))
         sys.exit(-1)
 
