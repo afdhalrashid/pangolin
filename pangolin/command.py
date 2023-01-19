@@ -44,7 +44,9 @@ thisdir = os.path.abspath(os.path.dirname(__file__))
 cwd = os.getcwd()
 
 
-def main(sysargs = sys.argv[1:], ic_number = sys.argv[2]):
+def main(sysargs = sys.argv[1:]):
+    if len(sys.argv)>2:
+        ic_number = sys.argv[2]
     parser = argparse.ArgumentParser(prog = _program,
     description='pangolin: Phylogenetic Assignment of Named Global Outbreak LINeages',
     usage='''pangolin <query> [options]''')
