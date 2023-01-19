@@ -17,6 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/update_pangolin', function () {
+    $cwd = getcwd();
+    echo $cwd;
+    chdir("../../");
+    // __DIR__ . '/..';
+    $cwd = getcwd();
+    echo $cwd;
+    $command = escapeshellcmd('pangolin --update-data');
+    $output = shell_exec($command);
+    echo $output;
+});
 Route::get('/test_pangolin', function () {
     $cwd = getcwd();
     echo $cwd;
@@ -26,4 +37,6 @@ Route::get('/test_pangolin', function () {
     echo $cwd;
     $command = escapeshellcmd('pangolin cluster.fasta 911610105285');
     $output = shell_exec($command);
+    echo $output;
+
 });
